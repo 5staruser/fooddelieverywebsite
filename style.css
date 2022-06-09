@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-width:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    margin: 3px 6px;
+    height: 9vh;
+    width: 9vw;
+}
+.items{
+    display: flex;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar li a{
+    text-decoration: none;
+    display: block;
+    padding: 3px 22px;
+    color: white;
+    border-radius: 7px;
+}
+#navbar li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    /* margin: 223px; */
+    height: 548px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('https://img.rawpixel.com/private/static/images/website/2022-05/px1369813-image-kwvxxp91.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=fffc03ba9aaa6a55c5e803700a96684b') no-repeat center center/cover ;
+    top: 0;
+    left: 0;
+    /* height: 100%; */
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.89;
+}
+#home h1{
+    color: wheat;
+    text-align: center;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+.h-primary{
+    font-size: 51px;
+    padding: 13px;
+    font-family: 'Bree Serif', serif;
+}
+.primary-centre{
+    text-align: center;
+    font-size: 3.6rem;
+    font-family: 'Bree Serif', serif;
+    margin: 60px 8px;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 9px solid brown;
+    padding: 34px;
+    margin: 3px 32px;
+    border-radius: 7px;
+    background-color: wheat;
+    height: 250px;
+}
+#services .box img{
+    height: 156px;
+    margin: auto;
+    display: block;
+}
+.secondary-centre{
+    font-family: 'Bree Serif', serif;
+    padding: 9px 8px;
+    text-align: center;
+}
+#services .box p{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 7px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: brown;
+    margin: 15px;
+    font-family: 'Bree Serif', serif;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('https://cdn.pixabay.com/photo/2018/03/07/18/42/menu-3206749_1280.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.client-items{
+    padding: 34px;
+}
+.client-items img{
+    height: 120px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('https://c1.wallpaperflare.com/preview/551/930/440/contact-us-contact-call-us-phone-communication.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+#contact-box input{
+    width: 100%;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+#contact-box label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem; 
+}
+#contact-box form{
+    width: 40%;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
